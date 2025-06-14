@@ -1,0 +1,26 @@
+<!-- this is an example of button  that user clicks to change the backgroundColor -->
+<html>
+  <head>
+    <link rel="stylesheet" href="styleChangeBack.css">
+
+    <body>
+      <button>Click me to repaint!</button>
+    </body>
+              <!-- This is where the js code starts -->
+      <script>
+        function getRandomNumber(){
+          let letter = '123456789ABCDEF';
+          let color = '#'
+          for(let i = 0; i < 6; i++){
+            color += letter[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+
+        function changeColor(){
+          let newColor = getRandomNumber();
+          document.body.style.backgroundColor = newColor;
+        }
+      </script>
+  </head>
+</html>
