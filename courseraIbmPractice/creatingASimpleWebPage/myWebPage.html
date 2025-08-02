@@ -48,10 +48,10 @@
         <h2>Insight Submission Form</h2>
         <form action="/submit-feedback" method="POST">
             <fieldset>
-                <legend>Your Insights About Thomas J. Watson Are Valued</legend>
+                <legend>Your Insights About Thomas J. Watson Are Valued (Where legend element is used)</legend>
 
                 <!-- name field -->
-                <label for="name">Name:</label><br>
+                <label for="name">Name: (label element used here)</label><br>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
                 <!-- email field -->
@@ -64,10 +64,16 @@
                 
                 <!-- submit button -->
                 <button type="submit">Submit</button>
-                 
-            </fieldset>
+                
+                <fieldset>
+                    <legend>Hello this is a test (this text is in a legend element, within this element is the fieldset element)</legend>
+                    <p>Hello this is another test</p>
+                </fieldset>
 
+            </fieldset>
+            
         </form>
     </div>
+
     </body>
 </html>
