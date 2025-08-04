@@ -1,7 +1,7 @@
 /* sets the margin of all the element to 10px on all sides and the background-color to black */
 body {
     margin: 10px;
-    background-color: gray;
+    background-color: black;
 }
 
 /* Home section  which has the app name and nav bar. The styling is applied by id */
@@ -54,7 +54,7 @@ header {
 
 figure {
     float: left;
-    justify-content: auto;
+    justify-self: auto;
     width: 200px;
 }
 
@@ -84,8 +84,8 @@ button::hover {
 
 /* The calculator panel */
 .b {
-    border-top: solid;
-    border-width: 20px;
+    border-top-style: solid;
+    border-top-width: 20px;
     border-radius: 10px;
     background-color: white;
     width: 600px;
@@ -116,13 +116,13 @@ legend {
 .iconbutton {
     width: 40px;
     height: 40px;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     border-radius: 100%;
-    background-color: cyan;
+    background-color: rgb(225, 235, 235);
     display: flex;
     position: fixed;
-    bottom: 400px;
+    bottom: 40px;
     left: 0;
 }
 
@@ -132,6 +132,6 @@ legend {
 
 /* footer of the page  */
 footer {
-    background-color: rgb(255, 182, 193);
+    background-color: rgb(240, 234, 245);
     margin-top: 20px;
 }

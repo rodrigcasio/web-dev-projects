@@ -12,15 +12,17 @@
             <header><p>Unit Conversions</p></header>    <!-- <b> bold -->
             <nav>
                 <!-- buttons to redirect users to different temperature sections -->
-                <a href="#temperature"><button>Temperature</button></a>
-                <a href="#weight"><button>Weight</button></a>
-                <a href="#distance"><button>Distance</button></a>
+                <div class="topdiv">
+                <a href="#temperature"><button class="topmenu">Temperature</button></a>
+                <a href="#weight"><button class="topmenu">Weight</button></a>
+                <a href="#distance"><button class="topmenu">Distance</button></a>
+                </div>
             </nav>
         </section>
 
-        <div id="all-conversions-section">
+        <div id="all-conversion-section">
 
-            <section id="temperature" class="temperature">  
+            <section id="temperature" class="b temperature">  
                 <div id="tmp">
                     <figure>
                         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px">
@@ -53,7 +55,7 @@
             </section>
 
             <!-- 2nd section-->
-            <section id="weight" class="weight">
+            <section id="weight" class="b weight">
                 <div id="wgt">
                     <figure>
                         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px">
@@ -83,7 +85,7 @@
             </section>
             
             <!-- 3rd section -->
-            <section id="distance" class="distance">
+            <section id="distance" class="b distance">
                 <div id="dst">
                     <figure>
                         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px">
@@ -113,7 +115,7 @@
             </section>
         </div>
 
-        <div id="go-home">
+        <div id="go-home" class="iconbutton">
             <a href="#home"> <!-- making an image an anchor to go back to the home section -->
                 <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg">
             </a>
