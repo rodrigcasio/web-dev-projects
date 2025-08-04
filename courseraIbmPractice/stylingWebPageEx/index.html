@@ -1,11 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- exercise to use inline CSS, internal CSS and external CSS -->
 <html>
     <head>
         <title>Solar System</title>
+
+        <!-- example of internal CSS -->
+        <style>
+            table, th, td {
+                border: 2px solid black;
+            }
+        </style>
+
     </head>
 
-    <body>
-        <h1>Solar System</h1>
+    <body style="background-color: wheat">
+        <h1 style="font-family: Cursive; font-size: 70px; color:rgb(139,0,0)">Solar System</h1>     <!-- example of inline CSS -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Planets2013.svg" alt="Solar system image" height="250px" width="700px">
         <p>The solar system consists of the sun and everything that orbits the sun. This includes the eight planets and their moons, the dwark planets, asteroids, comets and other small objects.
         </p>
@@ -14,8 +22,8 @@
         </p>
         <p><strong><u>Planets in solar system:</u></strong></p>
 
-        <table>
-            <tr>
+        <table style="border: 2px solid black"> <!-- example of INLINE CSS -->
+            <tr style="background-color: yellow">
                 <th>No. </th>
                 <th>Planet Name</th>
                 <th>Distance from the Sun (in million km)</th>
