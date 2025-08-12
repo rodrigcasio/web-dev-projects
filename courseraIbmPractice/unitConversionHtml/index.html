@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -36,11 +37,11 @@
                             <!-- label for temp input -->
                             <label for="celsius">Celsius</label><br>
                             
-                            <input type="number" id="celsius"><br>
-
+                            <input type="number" id="celsius">
+                            <br><br>
                             <!-- The conversion button -->
-                            <button id="temperature"> Convert </button><br>
-
+                            <button id="temperature" onclick="convertTemp()"> Convert </button>
+                            <br><br>
                             <!-- label for temp output -->
                             <input type="number" id="fahrenheit"><br>
 
@@ -69,10 +70,10 @@
 
                             <label for="kilograms">Kilograms</label><br>
 
-                            <input type="number" id="kilograms"><br>
-
-                            <button id="weight" class="weight"> Convert </button> <br>
-
+                            <input type="number" id="kilograms">
+                            <br><br>
+                            <button id="weight" class="weight" onclick="convertWeight()"> Convert </button> 
+                            <br><br>
                             <input type="number" id="pounds"><br>
 
                             <label for="pounds">Pounds</label>
@@ -98,10 +99,10 @@
 
                             <label for="kilometers">Kilometers</label><br>
 
-                            <input type="number" id="kilometer"><br>
-
-                            <button id="distance"> Convert </button><br>
-
+                            <input type="number" id="kilometers">
+                            <br><br>
+                            <button id="distance" onclick="convertDistance()"> Convert </button>
+                            <br><br>
                             <input type="number" id="miles"><br>
 
                             <label for="miles">Miles</label><br>
@@ -109,7 +110,7 @@
                     </article>
 
                     <aside>
-                        To convert kilometers to miles yourself, use this formula replacing the 'km' with your distance in kilometers: km + 1.609
+                        To convert kilometers to miles yourself, use this formula replacing the 'km' with your distance in kilometers: (km * 0.62137)
                     </aside>
                 </div>
             </section>
